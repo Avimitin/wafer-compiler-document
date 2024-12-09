@@ -2,9 +2,9 @@
 
 ## Frontend Design
 Frontend Design required three files:
-* The drawio file for diagram display (./frontend-design.drawio)
-* The drawio rendered image to embeded in document (./imgs/compiler-dispatch-diagram.png)
-* The main typst file for document rendering (./frontend-design.typ)
+* The drawio file for diagram display and drawing [`./assets/frontend-design.drawio`](./assets/frontend-design.drawio)
+* The drawio rendered image to embeded in document [`./assets/frontend-design.png`](./assets/frontend-design.png)
+* The main typst file for document rendering [`./frontend-design.typ`](./frontend-design.typ)
 
 To get a latest rendered PDF file, run the following commands:
 
