@@ -1,8 +1,6 @@
-Documents for WaferCompiler project
-===================================
+# Documents for WaferCompiler projec
 
-Frontend Design
----------------
+## Frontend Design
 Frontend Design required three files:
 * The drawio file for diagram display (./frontend-design.drawio)
 * The drawio rendered image to embeded in document (./imgs/compiler-dispatch-diagram.png)
@@ -11,8 +9,10 @@ Frontend Design required three files:
 To get a latest rendered PDF file, run the following commands:
 
 ```console
-$ typst compile ./frontend-design.typ
-$ ls *.pdf
+$ # optional
+$ # nix develop
+$ typst compile ./frontend-design.typ ./rendered/frontend-design.pdf
+$ ls ./rendered
 frontend-design.pdf
 ```
 
