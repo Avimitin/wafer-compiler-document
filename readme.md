@@ -9,8 +9,9 @@ Frontend Design required three files:
 To get a latest rendered PDF file, run the following commands:
 
 ```console
-$ # optional
-$ # nix develop
+$ nix run .
+# OR run command manually
+# optional: use `nix develop` to get a typst shell
 $ typst compile ./frontend-design.typ ./rendered/frontend-design.pdf
 $ ls ./rendered
 frontend-design.pdf

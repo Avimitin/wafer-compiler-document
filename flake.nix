@@ -20,5 +20,12 @@
         devShells.default = pkgs.mkShell {
           nativeBuildInputs = [ pkgs.typst ];
         };
+        apps.default = flake-utils.lib.mkApp rec {
+          name = "build-doc";
+          drv = pkgs.writeShellScriptBin name ''
+            mkdir -p ./rendered
+            ${pkgs.lib.getExe pkgs.typst} compile ./frontend-design.typ ./rendered/frontend-design.pdf
+          '';
+        };
       });
 }
