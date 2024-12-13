@@ -1,5 +1,7 @@
 # Documents for WaferCompiler projec
 
+An rendered version can be found under [`./rendered`](./rendered).
+
 ## Requirement
 1. Frontend Design
   * <https://draw.io>
