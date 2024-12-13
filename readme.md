@@ -1,20 +1,22 @@
 # Documents for WaferCompiler projec
 
-## Frontend Design
-Frontend Design required three files:
-* The drawio file for diagram display and drawing [`./assets/frontend-design.drawio`](./assets/frontend-design.drawio)
-* The drawio rendered image to embeded in document [`./assets/frontend-design.png`](./assets/frontend-design.png)
-* The main typst file for document rendering [`./frontend-design.typ`](./frontend-design.typ)
+## Requirement
+1. Frontend Design
+  * <https://draw.io>
+  * All `*.drawio` file under [`./assets`](./assets)
+2. Document
+  * [typst](https://typst.app/)
+  * [`./frontend-design.typ`](./frontend-design.typ)
 
-To get a latest rendered PDF file, run the following commands:
+## Build instruction
+If you have [nix](https://nixos.org/) installed, use the nix tools to do the job:
+```bash
+nix run .
+```
 
-```console
-$ nix run .
-# OR run command manually
-# optional: use `nix develop` to get a typst shell
-$ typst compile ./frontend-design.typ ./rendered/frontend-design.pdf
-$ ls ./rendered
-frontend-design.pdf
+If you don't have nix, installed typst yourself and run:
+```bash
+typst compile ./frontend-design.typ ./rendered/frontend-design.pdf
 ```
 
 > Developers might need to install Noto Fonts CJK to get a better reading experience.
